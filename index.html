@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <title>Tailwind CSS</title>
+</head>
+
+<body>
+
+    <div class="bg-no-repeat" style="background-image:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1)), url(../images/guitar_lesson_background.jpg)">
+        <!-- Hamburger -->
+        <div class="flex-flex-col mx-auto">
+            <button id="menu-btn" class="flex hamburger md:hidden focus:outline-none mr-4">
+				<span class="hamburger-top"></span>
+				<span class="hamburger-middle"></span>
+				<span class="hamburger-bottom"></span>
+			</button>
+
+            <!-- Hamburger menu -->
+            <div class="md:hidden flex-row">
+                <div id="menu" class="absolute flex-col bg-neutral-800 opacity-95 items-center hidden self-end py-8 mt-16 space-y-6 font-bold  sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
+                    <a href="#aboutus">About us</a>
+                    <a href="#whatwedo">What we do</a>
+                    <a href="#teachers">Teachers</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navbar -->
+        <nav class="flex mx-auto bg-transparent pt-8">
+            <div class="flex flex-row text-center md:flex items-center md:justify-center mx-auto">
+                <div class="flex flex-col-reverse mx-auto md:mx-0 space-y-2 pb-0 items-center text-center justify-center md:flex-row md:mr-24">
+                    <img class="mx-0 w-12" src="../images/logo.png" width="">
+                    <h1 class="font-bold font-poppins text-neutral-100 pl-2">MIDI Guitar Academy</h1>
+                </div>
+                <div class="hidden md:flex space-x-16 pr-12 whitespace-nowrap">
+                    <a class="font-medium transition ease-in-out delay-50 text-neutral-200 hover:text-neutral-50" href="#aboutus">About us</a>
+                    <a class="font-medium transition ease-in-out delay-50 text-neutral-200 hover:text-neutral-50" href="#whatwedo">What we do</a>
+                    <a class="font-medium transition ease-in-out delay-50 text-neutral-200 hover:text-neutral-50" href="#teachers">Teachers</a>
+                    <a class="font-medium transition ease-in-out delay-50 text-neutral-200 hover:text-neutral-50" href="#contact">Contact</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero -->
+        <div class="container mx-auto pb-8 flex flex-col md:space-x-12 md:flex-row md:bg-cover md:w-full md:px-6 md:mx-auto md:mt-10 md:space-y-0 justify-center items-center">
+            <div class="flex flex-col space-y-2 pb-8 md:pb-32">
+                <h1 class="max-w-md font-bold text-center text-3xl pt-4 md:text-6xl md:text-left tracking-[0.25rem] text-neutral-200 md:pt-16 mb-8">Innovative guitar lessons</h1>
+                <p class="px-4 max-w-md text-center text-2xl md:text-left text-neutral-300 md:font-thin md:pr-12">Learn to play a guitar with our new MIDI system.</p>
+                <p class="px-4 max-w-md text-center text-neutral-300 md:text-2xl md:text-left md: font-thin">It has never been easier!</p>
+                <div class="flex px-4 justify-center md:flex pt-4 md:justify-between">
+                    <button class="font-medium px-8 py-2 transition ease-in-out delay-50 md:px-16 md:py-2 text-white bg-emerald-600 rounded-full baseline hover:bg-emerald-700">
+					<p>Contact us</p></button>
+                </div>
+            </div>
+            <div class="flex flex-col items-center bg-neutral-100 shadow-2xl px-2 mb-4 max-w-lg md:basis-96 justify-center rounded-lg md:py-8 bg-clip-padding backdrop-filter backdrop-blur-[4px] bg-opacity-60 border border-neutral-900">
+                <p class="font-bold text-xl md:font-poppins md:font-black md:text-3xl py-4">Join us!</p><input class="border-2 border-neutral-400 px-4 py-2 w-60 md:w-72 rounded-lg focus:shadow-xl mb-4 md:focus:w-80" placeholder="Name" type="text"> <input class="border-2 border-neutral-400 px-4 py-2 w-60 md:w-72 rounded-lg focus:shadow-xl mb-4 md:focus:w-80"
+                    placeholder="Age" type="text"> <input class="border-2 border-neutral-400 px-4 py-2 w-60 md:w-72 rounded-lg focus:shadow-xl mb-4 md:focus:w-80" placeholder="E-mail" type="text"> <button class="font-medium transition ease-in-out delay-50 px-8 py-1 mb-4 mt-4 text-white bg-emerald-600 rounded-full baseline hover:bg-emerald-700">Send!</button>
+            </div>
+        </div>
+
+        <!-- About us -->
+        <div class="w-full flex flex-col-reverse items-center px-4 py-4 justify-center md:mx-0 lg:flex-row bg-neutral-100 md:bg-[url('../images/Wave_about_us.svg')] md:bg-no-repeat md:bg-cover text-center md:pt-16 md:pb-16" id="aboutus">
+            <div class="flex md:max-w-xl"><img alt="About us" class="" src="../images/about_us.svg"></div>
+            <div class="flex-column px-2 text-left md:text-center pb-0 lg:max-w-screen-sm">
+                <div class="relative flex pb-4 items-center">
+                    <div class="flex-grow border-t border-neutral-400"></div>
+                    <p class="mx-1 md:mx-4 text-neutral-800 md:text-xl font-thin">Wanna know more?</p>
+                    <div class="flex-grow border-t border-neutral-400"></div>
+                </div>
+                <p class="text-3xl pl-12 lg:pl-0 md:text-5xl font-poppins font-bold">Let us introduce ourselves</p>
+                <p class="text-lg text-justify px-12 lg:px-0 md:text-md font-poppins font-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a elit lacinia mi iaculis finibus vitae eget nisl. Maecenas volutpat rhoncus orci ac elementum. Quisque non dui non neque aliquet scelerisque.Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit. In a elit lacinia mi iaculis finibus vitae eget nisl. Maecenas volutpat rhoncus orci ac elementum. Quisque non dui non neque aliquet scelerisque.Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a elit lacinia
+                    mi iaculis finibus vitae eget nisl.</p>
+            </div>
+        </div>
+
+        <!-- Teachers section-->
+        <div class="bg-[url('../images/Wave.svg')] bg-no-repeat bg-cover text-center space-y-2 pb-8" id="teachers">
+
+            <!-- Bar -->
+            <div class="w-full bg-neutral-800 py-4 shadow-sm shadow-black">
+                <h3 class="font-poppins font-bold text-md text-neutral-300">Having a trouble?</h3>
+                <h2 class="md:text-3xl font-poppins font-bold text-neutral-50">Find a teacher for you!</h2>
+            </div>
+
+            <!-- Teachers -->
+            <div class="flex justify-center pt-4 flex-col space-y-8 md:space-y-0 lg:flex-row items-center md:px-0 md:mx-0 md:pb-36 md:pt-8">
+
+                <div class="w-60 mt-0 md:w-96 bg-white shadow-lg shadow-neutral-600 lg:border-2 border-teal-600 px-2 py-4 space-y-4 md:mx-8 rounded">
+                    <img alt="" class="rounded-full  w-32 mx-auto shadow-2xl" src="../images/person2.png">
+                    <p class="font-poppins font-black text-xl">Robert Adams</p>
+                    <p class="font-poppins font-thin text-md text-neutral-900">Knows history. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a elit lacinia mi iaculis finibus vitae eget nisl. Maecenas volutpat rhoncus orci ac elementum. Quisque non dui non neque aliquet scelerisque.</p>
+                </div>
+
+                <div class="w-60 md:translate-y-8 md:w-96 bg-white shadow-lg shadow-neutral-600 lg:border-2 border-teal-600 px-2 py-4 space-y-4 md:mx-8 rounded">
+                    <img alt="" class="rounded-full w-32 mx-auto shadow-2xl border-2 border-white" src="../images/person.png">
+                    <p class="font-poppins font-black text-xl">Tommy Onehanded</p>
+                    <p class="font-poppins font-thin text-md text-neutral-900">Pitch burner. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a elit lacinia mi iaculis finibus vitae eget nisl. Maecenas volutpat rhoncus orci ac elementum. Quisque non dui non neque aliquet scelerisque.</p>
+                </div>
+
+                <div class="w-60 md:translate-y-16 md:w-96 bg-white shadow-lg shadow-neutral-600 lg:border-2 border-teal-600 px-2 py-4 space-y-4 md:mx-8 rounded">
+                    <img alt="" class="rounded-full w-32 mx-auto shadow-2xl border-2 border-white" src="../images/person3.png">
+                    <p class="font-poppins font-black text-xl">Ceasar Disgrace</p>
+                    <p class="font-poppins font-thin text-md text-neutral-900">Professional cyclist. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a elit lacinia mi iaculis finibus vitae eget nisl. Maecenas volutpat rhoncus orci ac elementum. Quisque non dui non neque aliquet scelerisque.</p>
+                </div>
+
+                <div class="w-60 md:translate-y-24 md:w-96 bg-white shadow-lg shadow-neutral-600 lg:border-2 border-teal-600 px-2 py-4 space-y-4 md:mx-8 rounded">
+                    <img alt="" class="rounded-full w-32 mx-auto shadow-2xl border-2 border-white" src="../images/person.png">
+                    <p class="font-poppins font-black text-xl">Gregory Gray</p>
+                    <p class="font-poppins font-thin text-md text-neutral-900">Master-slave. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a elit lacinia mi iaculis finibus vitae eget nisl. Maecenas volutpat rhoncus orci ac elementum. Quisque non dui non neque aliquet scelerisque.</p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- What we do -->
+        <div class="w-full py-4 flex flex-col-reverse md:flex-row bg-neutral-100 md:bg-no-repeat md:bg-cover text-center md:justify-center md:pt-0 md:pb-0" id="whatwedo">
+            <p class="text-3xl font-bold md:text-5xl">What we do?</p>
+        </div>
+        <div class="w-full justify-center items-center flex flex-col space-y-4 md:flex-row bg-neutral-100 md:bg-no-repeat md:bg-cover text-center md:justify-center pb-8 md:pt-16 md:pb-0">
+            <div class="flex-column md:max-w-xl px-6 md:ml-16 text-left md:text-left md:space-y-4 flex-nowrap">
+                <p class="text-lg text-neutral-700 md:text-md font-poppins font-bold"><img alt="" class="inline-block" src="../images/iconmonstr-check-mark-2.svg"> Acoustic guitar lessons</p>
+                <p class="text-lg text-neutral-700 md:text-md font-poppins font-bold"><img alt="" class="inline-block" src="../images/iconmonstr-check-mark-2.svg"> Electric guitar lessons</p>
+                <p class="text-lg text-neutral-700 md:text-md font-poppins font-bold"><img alt="" class="inline-block" src="../images/iconmonstr-check-mark-2.svg"> Classical guitar lessons</p>
+                <p class="text-lg text-neutral-700 md:text-md font-poppins font-bold"><img alt="" class="inline-block" src="../images/iconmonstr-check-mark-2.svg"> Bass guitar lessons</p>
+                <p class="text-lg text-neutral-700 md:text-md font-poppins font-bold"><img alt="" class="inline-block" src="../images/iconmonstr-check-mark-2.svg"> Reading notes</p>
+            </div>
+            <div class="flex text-red-500"><img alt="About us" src="../images/undraw_compose_music_re_wpiw.svg"></div>
+        </div>
+
+        <!-- Features -->
+        <div class="w-full justify-center items-center flex flex-col-reverse space-y-4 md:flex-row bg-neutral-100 md:bg-no-repeat md:bg-cover text-center md:justify-center pb-8 md:pt-16 md:pb-16">
+            <div class="flex text-red-500 md:pb-0">
+                <img alt="About us" class="md:flex w-96" src="../images/undraw_completed_tasks_vs6q.svg">
+            </div>
+            <div class="md:w-64 px-6 md:ml-16 text-left pb-8 md:text-left md:space-y-4 flex-nowrap">
+                <p class="text-2xl md:text-4xl font-poppins font-bold">Features:</p>
+                <p class="text-lg text-neutral-700 md:text-md font-poppins font-bold"><img alt="" class="inline-block" src="../images/iconmonstr-check-mark-2.svg"> Real-time online lessons with our MIDI Display System &trade;</p>
+                <p class="text-lg text-neutral-700 md:text-md font-poppins font-bold"><img alt="" class="inline-block" src="../images/iconmonstr-check-mark-2.svg"> Access to recorded lesson whenever you want</p>
+                <p class="text-lg text-neutral-700 md:text-md font-poppins font-bold"><img alt="" class="inline-block" src="../images/iconmonstr-check-mark-2.svg"> 24/7 live chat</p>
+                <p class="text-lg text-neutral-700 md:text-md font-poppins font-bold"><img alt="" class="inline-block" src="../images/iconmonstr-check-mark-2.svg"> Discounts for regular customers</p>
+                <p class="text-lg text-neutral-700 md:text-md font-poppins font-bold"><img alt="" class="inline-block" src="../images/iconmonstr-check-mark-2.svg"> A lot of fun</p>
+            </div>
+
+        </div>
+
+        <!-- Contact -->
+        <div class="w-full flex md:flex-row py-4 items-center bg-emerald-900 text-center justify-center md:py-12" id="contact">
+            <div class="md:ml-0 lg:flex lg:space-x-8 text-left items-center justify-center space-y-2 md:space-y-4">
+                <div class="">
+                    <p class="ml-2 text-3xl md:text-5xl font-poppins font-bold text-neutral-50">Contact us!</p>
+                </div>
+                <p class="text-lg md:text-md tracking-wide font-poppins font-normal text-neutral-50"><img alt="" class="inline-block" src="../images/icons8-phone.svg"> +48 213 769 420</p>
+                <p class="text-lg md:text-md tracking-wide font-poppins font-normal text-neutral-50"><img alt="" class="inline-block" src="../images/icons8-facebook.svg">MIDI Guitar Academy</p>
+                <p class="text-lg md:text-md tracking-wide font-poppins font-normal text-neutral-50"><img alt="" class="inline-block" src="../images/icons8-instagram.svg">midi_guitar_academy</p>
+            </div>
+        </div>
+
+    </div>
+    <script src="javascript/script.js"></script>
+</body>
+
+</html>
